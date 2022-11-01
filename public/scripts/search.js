@@ -1,0 +1,1 @@
+$('.card').click(event => location.replace(`product/${$(this).data(id)}`));

@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 mb-3 border-bottom border-secondary">
+      <h2>Create a listing</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <h4>Upload an Image</h2>
+      <div class="border border-secondary rounded h-75">
+        <div class = "mb-3">
+          <label for="file1" class="form-lable">Please upload your main display photo (Required)</label>
+          <input class="form-control" type="file" id="file1">
+        </div>
+        <div class = "mb-3">
+          <label for="file2" class="form-lable">Please upload your second display photo (Optional)</label>
+          <input class="form-control" type="file" id="file2">
+        </div>
+        <div class = "mb-3">
+          <label for="file3" class="form-lable">Please upload your third display photo (Optional)</label>
+          <input class="form-control" type="file" id="file3">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6">
+      <div class="mb-3">
+        <label for="productName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="productName">
+      </div>
+      <div class="mb-3">
+        <label for="productZipcode" class="form-label">Zipcode</label>
+        <input type="text" class="form-control" id="productZipcode">
+      </div>
+      <div class="mb-3">
+        <label for="productPrice" class="form-label">Price</label>
+        <input type="text" class="form-control" id="productPrice">
+      </div>
+      <div class="mb-3">
+        <label for="productDesc" class="form-label">Description</label>
+        <textarea class="form-control" id="productDesc" rows="6"></textarea>
+      </div>
+      <button type="button" class="btn btn-success" id="post">Post Listing</button>
+    </div>
+  </div>
+</div>
+
+<script src="/scripts/post.js"></script>

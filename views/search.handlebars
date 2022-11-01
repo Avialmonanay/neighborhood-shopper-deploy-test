@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2 class="border-bottom border-secondary py-2 mb-3">Searching {{zip}}</h2>
+    </div>
+  </div>
+
+  <div class="row">
+
+    {{#each cards as |card|}}
+    <div class="col-12 col-sm-10 col-md-6 col-lg-4 col-xxl-3 mb-3">
+      <div class="card" data-id="{{card.id}}">
+        <img src="{{card.main_image}}" class="card-img-top" alt="{{card.title}}">
+        <div class="card-body">
+          <h5 class="card-title">{{card.title}}: {{card.price}}</h5>
+          <p class="card-text">{{card.description}}</p>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+
+  </div>
+</div>
+<script src="/scripts/search.js"></script>
